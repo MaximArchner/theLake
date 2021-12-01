@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="ACM Project">
+        <meta name="keywords" content="Rusty Lake, Coding, Cube Escape, the Lake">
+        <meta name="author" content="Berke Aytan">
+        <title>The Lake</title>
+        <link rel="icon" href="../photos/favicon.ico"
+         type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    </head>
+    
+    <style>
+        ul.topnav label {
+            width:12em;
+            height:1.5em;
+            position:absolute;
+            cursor: pointer;
+            left:0;
+        }
+        
+        ul.topnav label.toggle {
+            position: absolute;
+            cursor:pointer; 
+            margin:1rem 1rem;
+            left: 1;
+            width: 46px;
+        }
+  
+        ul.topnav label.toggle svg {
+            width: 3rem;
+            fill: #15405e;            
+        }
+  
+        ul.topnav label.toggle .close {
+            display: none;
+        }
+  
+        ul.topnav label svg.menu{
+            margin:0.5em 0.7rem;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+            align-items: center;
+            margin: 1rem;
+        }
+  
+        ul.topnav .checkbox{
+            display:none;
+        }
+    </style>
+
+    <body>
+        <ul class="topnav">
+            <label for="checkbox" class="toggle">
+                <svg class="menu" viewBox="0 0 448 512">
+                    <rect width="200" height="40" rx="10"></rect>
+                    <rect y="60" width="200" height="40" rx="10"></rect>
+                    <rect y="120" width="200" height="40" rx="10"></rect>
+                </svg>
+                <svg class="close" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1" y1="11" 
+                        x2="11" y2="1" 
+                        stroke="black" 
+                        stroke-width="2"/>
+                    <line x1="1" y1="1" 
+                        x2="11" y2="11" 
+                        stroke="black" 
+                        stroke-width="2"/>
+                </svg>
+            </label>
+            <li><a href="default.html"> Home </a></li>
+            <li class="dropdown">
+                <a href="projects.html"> Projects </a>
+                <div class="dropdown-content">
+                <a href="thelake.html"> Rusty Lake </a>
+                <a href="cubeescape.html"> Cube Escape </a>
+                <a class="active" href="whitedoor.html"> White Door </a>
+            </li>
+            <li><a href="about.html"> About Us </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+            <div class="topnav">
+            <form>
+                <input type="text" placeholder="Extract Memories..." name="search" style="border-radius: 9px;">
+                <button type="submit" name="submit-search" style="border-radius: 10px;"><img src="https://icons-for-free.com/iconfiles/png/512/magnifying+glass+search+zoom+icon-1320196461375500720.png" width="12px" height="12px"></button>
+            </form>
+            </div>
+            </ul>
+
+            
+    <a href="corrupted.html" style="display:none"><button accesskey="c"></button></a>
+    <a href="gymnopedie.html" style="display:none"><button accesskey="g"></button></a>
+    
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="ACM Project">
+        <meta name="keywords" content="Rusty Lake, Coding, Cube Escape, the Lake">
+        <meta name="author" content="Berke Aytan">
+        <title>About Us | The Lake</title>
+        <link rel="icon" href="../photos/favicon.ico"
+         type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    </head>
+   
+    <style>
+      ul.topnav label {
+          width:12em;
+          height:1.5em;
+          position:absolute;
+          cursor: pointer;
+          left:0;
+      }
+      
+      ul.topnav label.toggle {
+          position: absolute;
+          cursor:pointer; 
+          margin:1rem 1rem;
+          left: 1;
+          width: 46px;
+      }
+
+      ul.topnav label.toggle svg {
+          width: 3rem;
+          fill: #15405e;            
+      }
+
+      ul.topnav label.toggle .close {
+          display: none;
+      }
+
+      ul.topnav label svg.menu{
+          margin:0.5em 0.7rem;
+          display: flex;
+          flex-direction: column;
+          gap:2rem;
+          align-items: center;
+          margin: 1rem;
+      }
+
+      ul.topnav .checkbox{
+          display:none;
+      }
+
+    #myDIV {
+        width: 100%;
+        padding: 50px 0;
+        display: none;
+    }
+  </style>
+
+  <body>
+      <ul class="topnav">
+          <label for="checkbox" class="toggle">
+              <svg class="menu" viewBox="0 0 448 512">
+                  <rect width="200" height="40" rx="10"></rect>
+                  <rect y="60" width="200" height="40" rx="20"></rect>
+                  <rect y="120" width="200" height="40" rx="20"></rect>
+              </svg>
+              <svg class="close" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                  <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+              </svg>
+        </label>
+            <li><a href="default.html"> Home </a></li>
+            <li class="dropdown">
+                <a href="projects.html"> Projects </a>
+                <div class="dropdown-content">
+                <a href="thelake.html"> Rusty Lake </a>
+                <a href="cubeescape.html"> Cube Escape </a>
+                <a href="whitedoor.html"> White Door </a>
+            </li>
+            <li><a class="active" href="about.html"> About Us </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+            <div class="topnav">
+            <form>
+                <input type="text" placeholder="Extract Memories..." name="search" style="border-radius: 9px;">
+                <button type="submit" name="submit-search" style="border-radius: 10px;"><img src="https://icons-for-free.com/iconfiles/png/512/magnifying+glass+search+zoom+icon-1320196461375500720.png" width="12px" height="12px"></button>
+            </form>
+            </div>
+            </ul>
+
+            <a href="corrupted.html" style="display:none" accesskey="c"></a>
+            <a href="gymnopedie.html" style="display:none" accesskey="g"></a>
+            
+            <div class="container">
+                <header style="margin-bottom: 3px;">
+                   <h1 onclick="myFunction()" style="font-family: 'Amatic SC', cursive; font-size: 50px;" accesskey="m">About Us</h1>
+                   <div id="myDIV">
+                       <a href="cubeescape.html"><img src="https://thumbs.gfycat.com/SphericalSnoopyHatchetfish-max-1mb.gif"></a>
+                   </div>
+                </header>
+                
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myDIV");
+                        if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                </script>
+                <article>
+                  <h1>About Rusty Lake</h1>
+                  <p>Rusty Lake is a bizzare adventure!</p>
+                  <img src="../photos/Rusty Lake (Boat).jpg" width="25%" alt="Rusty Lake Boat" style="float:right;margin:10px">
+                <p>Rusty Lake is both the name of our indie game studio and the eerie and surrealistic world we have created. Rusty Lake is both the name of our indie game studio and the eerie and surrealistic world we have created.</p>
+
+                   <p>Since spring 2015 we have developed 15 surrealistic adventure games that take place in the Rusty Lake universe. Inspired by David Lynch's TV series Twin Peaks we decided to create our own imaginative universe called Rusty Lake. We tried to bring something new to the point-and-click genre by by adding suspense and atmosphere to the "escape room" setting and releasing our series of games as part of a larger story.</p>
+                  <img src="https://pbs.twimg.com/media/Ex4xUUcWgAMWtj8?format=jpg&name=large" width="30%" alt="Rusty Lake Theme Park" style="float:left;margin:10px;">
+                    <p>At the heart of our accomplishments and success is the Rusty Lake community. Since the beginning of Rusty Lake, we have involved our community as much as possible and constantly find new ways to make them feel part of our universe. Our community supported us in creating our first premium game: Rusty Lake Hotel and helped us reach our Kickstarter goal for Paradox, in just 9 hours. The amount of fan art we receive is overwhelming and we still can't believe we have fans with Rusty Lake tattoos. We are so honored to be part of, and supported by this ever-growing community.</p>
+                    <p>Rusty Lake is an indie game studio based in Amsterdam, founded by Robin Ras & Maarten Looise. Rusty Lake is an indie game studio based in Amsterdam, founded by Robin Ras & Maarten Looise.</p>
+                    <iframe width="325" height="245" src="https://www.youtube.com/embed/FiN5iZ-1BF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="float:right;margin:10px" allowfullscreen></iframe>
+                
+                <p>Rusty Lake is both the name of our indie game studio and the eerie and surrealistic world we have created. Rusty Lake is both the name of our indie game studio and the eerie and surrealistic world we have created.</p>
+                <p>Rusty Lake is both the name of our indie game studio and the eerie and surrealistic world we have created. Rusty Lake is both the name of our indie game studio and the eerie and surrealistic world we have created.</p>
+                
+                <video style="float:left;margin:10px;" width="300" controls>
+                  <source src="Cube Escape Collection - Official Trailer.mp4" type="video/mp4">
+                </video>
+                
+                <p>At the heart of our accomplishments and success is the Rusty Lake community. Since the beginning of Rusty Lake, we have involved our community as much as possible and constantly find new ways to make them feel part of our universe. Our community supported us in creating our first premium game: Rusty Lake Hotel and helped us reach our Kickstarter goal for Paradox, in just 9 hours. The amount of fan art we receive is overwhelming and we still can't believe we have fans with Rusty Lake tattoos. We are so honored to be part of, and supported by this ever-growing community.</p>
+                    <p>Since spring 2015 we have developed 15 surrealistic adventure games that take place in the Rusty Lake universe. Inspired by David Lynch's TV series Twin Peaks we decided to create our own imaginative universe called Rusty Lake. We tried to bring something new to the point-and-click genre by by adding suspense and atmosphere to the "escape room" setting and releasing our series of games as part of a larger story.</p>
+                    
+                      <p>Memories are not only the key to the past, but also to the future. Past is never dead, it's not even past!</p>
+                      
+                        <p>Located in Amsterdam, and founded in 1768, Rusty Lake is the largest lake in Amsterdam, with many memories to collect. Located in Amsterdam, and founded in 1768, Rusty Lake is the largest lake in Amsterdam, with many memories to collect. Located in Amsterdam, and founded in 1768, Rusty Lake is the largest lake in Amsterdam, with many memories to collect.</p>                
+                <footer>Copyright &copy; The Lake</footer>
+                
+                </div>
+    </body>
+</html>

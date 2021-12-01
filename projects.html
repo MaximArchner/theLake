@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="ACM Project">
+        <meta name="keywords" content="Rusty Lake, Coding, Cube Escape, the Lake">
+        <meta name="author" content="Berke Aytan">
+        <title>The Lake</title>
+        <link rel="icon" href="../photos/favicon.ico"
+         type="image/icon type">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        ul.topnav label {
+            width:12em;
+            height:1.5em;
+            position:absolute;
+            cursor: pointer;
+            left:0;
+        }
+        
+        ul.topnav label.toggle {
+            position: absolute;
+            cursor:pointer; 
+            margin:1rem 1rem;
+            left: 1;
+            width: 46px;
+        }
+  
+        ul.topnav label.toggle svg {
+            width: 3rem;
+            fill: #15405e;            
+        }
+  
+        ul.topnav label.toggle .close {
+            display: none;
+        }
+  
+        ul.topnav label svg.menu{
+            margin:0.5em 0.7rem;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+            align-items: center;
+            margin: 1rem;
+        }
+  
+        ul.topnav .checkbox{
+            display:none;
+        }
+
+        article .leftmost {
+            margin-left: 18px;
+        }
+
+        article img{
+            transition: transform .3s;
+        }
+
+        article img:hover{
+            -ms-transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+    </style>
+
+    <body>
+        <ul class="topnav" style="border-radius:10px;">
+            <label for="checkbox" class="toggle">
+                <svg class="menu" viewBox="0 0 448 512">
+                    <rect width="200" height="40" rx="10"></rect>
+                    <rect y="60" width="200" height="40" rx="10"></rect>
+                    <rect y="120" width="200" height="40" rx="10"></rect>
+                </svg>
+                <svg class="close" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="50" y2="50" />
+                    <line x1="50" y1="0" x2="0" y2="50" />
+                </svg>
+            </label>
+            <li><a href="default.html"> Home </a></li>
+            <li class="dropdown">
+                <a class="active" href="projects.html"> Projects </a>
+                <div class="dropdown-content">
+                <a href="thelake.html"> Rusty Lake </a>
+                <a href="cubeescape.html"> Cube Escape </a>
+                <a href="whitedoor.html"> White Door </a>
+            </li>
+            <li><a href="about.html"> About Us </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+            <div class="topnav">
+            <form>
+                <input type="text" placeholder="Extract Memories..." name="search" style="border-radius: 9px;">
+                <button type="submit" name="submit-search" style="border-radius: 10px;"><img src="https://icons-for-free.com/iconfiles/png/512/magnifying+glass+search+zoom+icon-1320196461375500720.png" width="12px" height="12px"></button>
+            </form>
+            </div>
+            </ul>
+            
+    <a href="corrupted.html" style="display:none"><button accesskey="c"></button></a>
+    <a href="gymnopedie.html" style="display:none"><button accesskey="g"></button></a>
+    
+    <div class="container">
+        <header>
+            <h1 style="font-family: 'Amatic SC', cursive; font-size: 28px; text-align: center;">Rusty Lake Projects</h1>
+        </header>
+        <article>
+            <h1 style="font-weight: bold; color: goldenrod; margin-top: 3px;" class="leftmost">Premium Games</h1>
+            <a href="thelake.html#Paradise"><img src="../photos/Rusty Lake (Paradise).png" alt="Rusty Lake - Paradise" width="15%" style="border-radius: 20px; margin-right: 10px;" class="leftmost"></a>
+            <a href="thelake.html#Hotel"><img src="https://play-lh.googleusercontent.com/x0fv_OrqVqcNh_IfqJ39Ixqb9PprdGpwE9FUHgJLOuW_D8fXs4Gpm-nqDW2_P9Ch7A" alt="Rusty Lake - Hotel" width="15%" style="border-radius: 20px; margin-right: 15px;"></a>
+            <a href="thelake.html#Roots"><img src="https://i2.wp.com/www.oyunindir.club/wp-content/uploads/2018/02/Rusty-Lake-Roots.png?resize=300%2C300" alt="Rusty Lake - Roots" width="15%" style="border-radius: 20px; margin-right: 15px;"></a>
+            <a href="cubeescape.html"><img src="https://play-lh.googleusercontent.com/ajJc2pl8ijZaFy5gkjTsfoRCB5VVqawvqWNFTSYMvEMwV0Efz-Tbc09PrbOanBt7NPM" alt="Cube Escape - Paradox" width="15%" style="border-radius: 20px; margin-right: 15px;"></a>
+            <a href="whitedoor.html"><img src="https://play-lh.googleusercontent.com/p05JsaL1zJi_OAFthkI_OvsR8e0e3Ur2Wd-E0gcDyx94dsRSDVI3wWsq-W0cDPcgrnE" alt="Rusty Lake - White Door" width="15%" style="border-radius: 20px; margin-right: 15px; border: 1px solid black;"></a>
+            <a href="https://www.youtube.com/watch?v=vddlEmrbNRw"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsp9yc5EK51RJ123qVtA8vID2JkrvkGOdhg&usqp=CAU" alt="Rusty Lake - Past Within" width="15%" style="border-radius: 20px; margin-right: 15px;"></a>
+        </article>
+    </div>
+    </body>
+</html>

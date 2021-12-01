@@ -1,0 +1,203 @@
+body {
+    background-image: url(https://conf.nordicgame.com/wp-content/uploads/2017/03/rustry.lake_.roots_.no_.text_.640.426.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: grid;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3498DB;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.topnav li {
+    float: left;
+    margin-left: 10%;
+}
+
+ul.topnav li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 20px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+ul.topnav li a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: #2874A6;
+    color: white;
+}
+
+ul.topnav li a.active {
+    background-color: #2874A6;
+    color: white;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index:9999;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3498DB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    color: white;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #3498DB;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div.topnav {
+    float: right;
+    margin: 20px 24px;
+    overflow: hidden;
+    background-color: #3498DB;
+}
+
+div.topnav input[type=text] {
+    float: right;
+    border: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul.topnav a, div.topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    }
+
+    img {width:100%;float:none;margin-left:auto;margin-right:auto;}
+    iframe {width:100%;height:300px;margin-left:auto;margin-right:auto;}
+    video {width:100%;height:auto;margin-left:auto;margin-right:auto;}
+    ul.topnav {width:100%;}
+    ul.topnav li {float: none;}
+    ul.topnav li a {text-align:center;}
+    ul.topnav li.dropdown div.dropdown-content {width:100%;}
+    ul.topnav li.dropdown div.dropdown-content a {text-align:center;}
+}
+
+div.container {
+	width: 100%;
+    opacity: 0.9999;
+	}
+
+div.container p, div.container h1 {
+        margin-left: 7px;
+    }
+
+header, footer {
+	padding: 5px;
+	color: black;
+	background-color: white;
+	text-align: center;
+    opacity: 0.90;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 3px;
+	}
+
+article {
+	margin-top: 3px;
+	padding: 5px;
+	overflow: hidden;
+	border: 3px solid black;
+	user-select: none;
+	background-color: white;
+	opacity: 0.9;
+	border-radius: 9px;
+	}
+
+.topnav input[type=text] {
+        border: solid lightblue;
+        border-radius: 9px;
+    }
+    
+.topnav button [type=submit] {
+        border-radius: 10px;
+    }
+
+html {
+	scroll-behavior: smooth;
+    }
+
+#families {
+	background-color: white;
+	opacity: 0.9;
+    }
+
+#landmarks {
+	background-color: white;
+	opacity: 0.9;
+    }
+
+a {
+	color: inherit;
+	text-decoration: none;
+    }
+
+tr.spaceUnder>td {
+    padding-left: 3em;
+    }
+
+tr.spaceUnder>th {
+    padding-left: 3em;
+    }
+
+.navlist-mob {
+    display: flex;
+    position: fixed;
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    z-index: 9999;
+}
+
+.show {
+    transform: translateX(0px);
+}

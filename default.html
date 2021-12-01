@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="ACM Project">
+        <meta name="keywords" content="Rusty Lake, Coding, Cube Escape, the Lake">
+        <meta name="author" content="Berke Aytan">
+        <title>The Lake</title>
+        <link rel="icon" href="../photos/favicon.ico" type="image/icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link href="slideshow.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+    <style>
+        article img{
+            transition: transform .3s;
+        }
+
+        article img:hover{
+            -ms-transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+    </style>
+    
+    <body>
+        <ul class="topnav" id="topnav">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <li><a class="active" href="default.html"> Home </a></li>
+            <li class="dropdown">
+                <a href="projects.html"> Projects </a>
+                <div class="dropdown-content">
+                <a href="thelake.html"> Rusty Lake </a>
+                <a href="cubeescape.html"> Cube Escape </a>
+                <a href="whitedoor.html"> White Door </a>
+            </li>
+            <li><a href="about.html"> About Us </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+            <div class="topnav">
+            <form>
+                <input type="text" placeholder="Extract Memories..." name="search" style="border-radius: 9px;">
+                <button type="button" name="submit-search" style="border-radius: 10px;"><img src="https://icons-for-free.com/iconfiles/png/512/magnifying+glass+search+zoom+icon-1320196461375500720.png" width="12px" height="12px"></button>
+            </form>
+            </div>
+            </ul>
+                </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <a href="about.html"><img src="../photos/RLHotel.jpg" style="width:100%;"></a>
+                <div class="text">Enjoy your stay in Rusty Lake Hotel!</div>
+            </div>
+                  
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <a href="thelake.html#Roots"><img src="../photos/roots_wide.jpg" style="width:92.7vw; height: 40vw"></a>
+                <div class="text">Find the root of your memories...</div>
+            </div>
+                  
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../photos/cave_bottom.jpg" style="width:100%">
+                <div class="text">This site is full of little easter eggs...</div>
+            </div>
+                  
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+        </div>
+        <br>      
+        <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+                  
+        <script>
+            var slideIndex = 1;
+            var timer= null;
+            showSlides(slideIndex);
+                  
+            function plusSlides (n) {
+                clearTimeout(timer);
+                showSlides (slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                clearTimeout(timer);
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n==undefined){n = ++slideIndex}
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                timer = setTimeout(showSlides, 5000);
+                }
+            </script>
+        <noscript>We're sorry, your place is already taken.</noscript>
+
+    <a href="corrupted.html" style="display:none"><button accesskey="c"></button></a>
+    <a href="gymnopedie.html" style="display:none"><button accesskey="g"></button></a>
+    
+	<article style="text-align: left; margin-top: 5px; padding: 10px;">
+		<a href="thelake.html"><img src="https://play-lh.googleusercontent.com/FCeGiIVBJfVJEWEXGVsyiv1pq2hY2qidOvcnVigJB0hb9uE6mn65TgqMrtyD2y6TtX2y" title="Click here to learn more about the roots of the Lake." usemap="#Laura" alt="Rusty Lake Logo" style="width:206px;
+            height:206px; float: right; display: block;"></a>
+        <map name="Laura">
+            <area shape="circle" coords="103 15 7" href="corrupted.html">
+        </map>
+        <h1 style="margin-left: 10px;">Welcome to The Lake</h1>
+        <p style="margin-left: 10px; margin-right: 3px;"> The Lake is waiting for you... You will achieve a higher state of consciousness. However, there will be blood. Eyes blinded by the fog cannot see the truth. Remember the past...</p>
+        <p style="margin-left: 10px; margin-right: 3px;"> The memories are not only the key to past but also to the future. Everything you <a href="corrupted.html" target="_blank"> touch</a>, you change. Past is never dead, it's not even past. There will be blood, find the cube. </p>
+        <p style="font-size: 16px; text-align: center;"><i> Discover the mysteries in Rusty Lake and extract the memories of your past lives... </i></p>
+	</article>
+    <article  id="families">
+        <details style="margin-left: 5px; border: 3px solid black; border-radius: 10px;" open>
+		<img src="../photos/Family_Tree.jpg" alt="Family Tree" title="Family tree of Vanderbooms" style="display: block; float: left; width: 270px; height: 292.5px; border-radius: 10px; margin-top:10px; margin-right: 15px; margin-left: 10px;">
+		<summary style="font-family: times; font-size: 24px; font-weight: bold; margin-left: 10px;"> Vanderboom Family </summary>
+		<p style="margin-right: 5px; font-size: 20px; margin-top: 10px;"> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Thus, Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Therefore, Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Hence, Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet <a href="cubeescape.html" target="_blank">cubectetur</a>. However, Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Henceforth, Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		    Lorem ipsum dolor sit amet consectetur. Nevertheless, Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		</p>
+	    </details>
+        <details style="margin-left: 5px; border: 3px solid black; border-radius: 10px; margin-top: 4px;" open>
+        <summary style="font-family: times; font-size: 24px; font-weight: bold; margin-left: 10px;"> Vandermeer Family </summary>
+        <img src="../photos/vandermeers.png" alt="Vandermeer Family" title="Vandermeer Family" style="width: 300px; display:block; float:right; margin-right: 10px; margin-left: 7px; margin-top: 25px;">
+        <p style="margin-left: 10px; margin-right: 5px; font-size: 20px;"> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum <a href=gymnopedie.html>color</a> sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. 
+		Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
+    </details>
+        </article>
+        <footer>Copyright &copy; The Lake</footer>
+    </div>
+    </body>
+</html>
